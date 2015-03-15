@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>wifiServer</servlet-name>
+    <servlet-class>cn.edu.bjut.sse.wifi.server.receive.WifiInfoReceiveServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>wifiServer</servlet-name>
+    <url-pattern>/wifi</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>matching</servlet-name>
+    <servlet-class>cn.edu.bjut.sse.wifi.server.matching.MatchingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>matching</servlet-name>
+    <url-pattern>/matching</url-pattern>
+  </servlet-mapping>
+</web-app>
